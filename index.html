@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <div id="wrapper">
+    <div class="row expanded align-center enter">
+      <div class="large-6 medium-6 small-12">
+        <input class="enter-zip" type="text" placeholder="Enter zip code"><br/>
+      </div>
+    </div>
+    <div class="row expanded align-center">
+
+      <div class="location large-4 medium-4 small-12 box box1">
+        <div class="data__city">Location</div>
+      </div>
+      <div class="description large-4 medium-4 small-6 box box1">
+        <div class="data__description"></div>
+      </div>
+      <div class="icon large-4 medium-4 small-6 box box1">
+        <div class="data__icon"></div>
+      </div>
+      <div class="temp large-4 medium-4 small-12 box box1">
+        <div class="data__temp"></div>
+      </div>
+      <div class="temp-min large-4 medium-4 small-6 box box2">
+        <p>Low</p>
+        <div class="data__tempmin"></div>
+      </div>
+      <div class="temp-max large-4 medium-4 small-6 box box2">
+        <p>High</p>
+        <div class="data__tempmax"></div>
+      </div>
+      <div class="humidity large-4 medium-4 small-12 box box2">
+        <p>Humidity</p>
+        <div class="data__humidity"></div>
+      </div>
+      <div class="clouds large-4 medium-4 small-6 box box2">
+        <p>Clouds</p>
+        <div class="data__clouds"></div>
+      </div>
+      <div class="wind large-4 medium-4 small-6 box box2">
+        <p>Wind speed</p>
+        <div class="data__wind"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  </body>
+</html>

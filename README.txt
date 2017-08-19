@@ -1,0 +1,1 @@
+Reads data from OpenWeatherMap API based on entered zip code and outputs it in the UI.
