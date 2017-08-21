@@ -43,9 +43,9 @@ document.querySelector('.enter-zip').addEventListener('keypress', function(e) {
     
     apiCall = 'http://api.openweathermap.org/data/2.5/weather?zip=' + zip + '&units=imperial&APPID=8b6ee5a2e26849be1f88b30ebf28dc20';
 
-    // $.getJSON(apiCall, weatherCallback);
+    $.getJSON(apiCall, weatherCallback);
 
-    testWeather();
+    // testWeather();
   }
 })
 
