@@ -10,9 +10,6 @@ function weatherCallback(weatherData) {
   console.log(weatherData);
 
   cityName = weatherData.name;
-  if(cityName.length > 9) {
-    document.querySelector('.data__city').style.fontSize = '30px';
-  }
   clouds = weatherData.clouds.all;
   humidity = weatherData.main.humidity;
   temp = weatherData.main.temp;
@@ -46,9 +43,9 @@ document.querySelector('.enter-zip').addEventListener('keypress', function(e) {
     
     apiCall = 'http://api.openweathermap.org/data/2.5/weather?zip=' + zip + '&units=imperial&APPID=8b6ee5a2e26849be1f88b30ebf28dc20';
 
-    $.getJSON(apiCall, weatherCallback);
+    // $.getJSON(apiCall, weatherCallback);
 
-    // testWeather();
+    testWeather();
   }
 })
 
@@ -101,7 +98,7 @@ function init() {
 
 
 function testWeather() {
-  cityName = 'Boston';
+  cityName = 'Los Angeles';
   description = 'Haze';
   temp = 82.87;
   tempMax = 91.4;

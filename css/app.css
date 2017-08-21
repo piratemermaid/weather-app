@@ -5,7 +5,7 @@ body {
 
 @media screen and (min-width: 64em) {
   body {
-    background: gray;
+    background: #B9B9B9;
     padding: 20px 200px 20px 200px; }
 
   #wrapper {
@@ -22,11 +22,14 @@ p {
 .location {
   font-weight: bold;
   font-size: 40px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: #1B303B; }
 
+@media screen and (max-width: 39em) {
+  .location {
+    font-size: 25px; } }
 .location:hover {
-  text-transform: lowercase;
+  font-style: italic;
   -webkit-transition: .2s;
   transition: .2s; }
 
@@ -78,5 +81,8 @@ p {
 
 .temp, .wind {
   background: #5090B1; }
+
+.two-lines {
+  line-height: 2px; }
 
 /*# sourceMappingURL=app.css.map */
